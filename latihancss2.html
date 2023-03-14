@@ -2,7 +2,10 @@
 
 <head>
    <style>
-    *{height: 75%;}
+    *{margin: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 100%;}
     
     body{
         background-color: gray;
@@ -11,52 +14,76 @@
     
     header{
         flex:2;
-        font-size:xx-large;
+        font-size: 30pt;
         background-color: aqua;
-        color: lawngreen;
+        color: rgb(151, 51, 24);
         display: flex;
-    }
+        font-style: oblique;
+        justify-content: space-between; }
+
    aside{
-        background-color: blueviolet;
-        font-size: x-large; display: flex;
-    }
+        background-color: rgb(14, 9, 19); 
+        width: 20%;}
+
     main{
-        flex:5;
-        background-color: rgb(197, 66, 14);
+        flex:10;
+        background-color: rgb(241, 9, 9);
         font-size: x-large; 
-        display: flex;
-    }
+        display: flex;  }
+
     section{
-        background-color: rgb(207, 35, 141);
+        background-color: rgb(235, 145, 10);
         font-size: x-large; 
-        display: flex;
-    }
+        width: 100%;
+        display: flex;column-gap: 10px;}
+
     article{
-        background-color: rgb(51, 49, 180);
+        background-color: rgb(135, 218, 27);
+        font-size: x-large; 
+        width: 100%;
+        display: flex;}
+
+    footer{
+        background-color: darkgreen;
         font-size: x-large; 
         display: flex;
-    }
-}
-    article2{background-color: rgb(156, 212, 26);
-    font-size: x-large; display: flex
-    }
-    footer{background-color: darkgreen;
-    font-size: x-large; display: flex
-    }
+        flex:2;}
+
+    ul{
+        display: flex;
+        font-size: medium;
+        list-style:none ;}
 
    </style>
 </head>
-    <body>
-        <header>HEADER</header>
-        <aside>Sidebar
-        <main>
-            <section>
-                <article>Bagian 1</article>
-                <article2>Bagian 2</article2>
-            </section>
-        </main>
+<body>
+    <header>
+        <h1>HEADER</h1>
+        <nav>
+            <ul>
+                <li><a href="link1.html">Home</a> </li>
+                <li><a href="link2.html">About</a> </li>
+                <li><a href="link3.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+               <a href="link1.html">Link Menu</a>
+               <br>
+               <br>
+               <a href="link2.html">List MataKuliah</a>
         </aside>
-    
+        <section>
+            <article>
+                isi 1
+                <img src="Screenshot.jpg";>
+            </article>
+            <article>isi 2</article>
+        </section>
+    </main>
+
     <footer>footer</footer>
-    </body>
+</body>
 </html>
